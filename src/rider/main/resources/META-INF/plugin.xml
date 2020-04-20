@@ -1,9 +1,9 @@
 <idea-plugin>
   <id>riderblockjumper-rider</id>
   <name>Rider Block Jumper</name>
-  <version>1.0</version>
+  <version>_PLACEHOLDER_</version>
   <vendor url="https://github.com/Nightro/RiderBlockJumper">Anthony Reddan</vendor>
-  <idea-version since-build="1.0" until-build="1.0" /> <!-- TODO: ???? -->
+  <idea-version since-build="_PLACEHOLDER_" until-build="_PLACEHOLDER_" />
   <depends>com.intellij.modules.rider</depends>
 
   <!-- TODO: Fill -->
@@ -17,7 +17,7 @@
     <!--TODO: Delete .kt files and other generated garbage-->
     <!--TODO: Sample stuff - keep it lite as possible-->
     <!--<applicationConfigurable groupId="tools" displayName="Block Jumper" instance="com.jetbrains.rider.plugins.riderblockjumper.SampleOptionsPage" id="SampleOptionsPage" />-->
-    <applicationConfigurable groupId="tools" instance="com.jetbrains.rider.plugins.riderblockjumper.RiderBlockJumperOptionsPage" id="RiderBlockJumperOptionsPage" />
+    <applicationConfigurable groupId="editor" instance="com.jetbrains.rider.plugins.riderblockjumper.RiderBlockJumperOptionsPage" id="RiderBlockJumperOptionsPage" />
   </extensions>
 
   <actions>

@@ -125,6 +125,9 @@ patchPluginXml {
     changeNotes = changelogMatches.collect {
         it[1].replaceAll(/(?s)\r?\n/, "<br />\n")
     }.take(1).join('')
+
+    sinceBuild = "191"
+    untilBuild = "201.*"
 }
 
 prepareSandbox {

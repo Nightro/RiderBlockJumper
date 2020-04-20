@@ -7,7 +7,7 @@ using JetBrains.Application.UI.Options.OptionPages;
 
 namespace ReSharperPlugin.RiderBlockJumper.Options
 {
-    [OptionsPage(Id, PageTitle, typeof(OptionsThemedIcons.EnvironmentGeneral), ParentId = ToolsPage.PID)]
+    [OptionsPage(Id, PageTitle, typeof(OptionsThemedIcons.EnvironmentGeneral), ParentId = EnvironmentEditorPage.PID)]
     public class RiderBlockJumperOptionsPage : BeSimpleOptionsPage
     {
         private const string Id = nameof(RiderBlockJumperOptionsPage);
