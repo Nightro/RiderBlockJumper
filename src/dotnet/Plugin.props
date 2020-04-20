@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <SdkVersion>2019.3.0-*</SdkVersion>
+    
+    <Title>RiderBlockJumper</Title>
+    <Description>Description</Description>
+  
+    <Authors>Author</Authors>
+    <Copyright>Copyright $([System.DateTime]::Now.Year) Maintainers of RiderBlockJumper</Copyright>
+    <PackageTags>resharper plugin</PackageTags>
+  
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+  </PropertyGroup>
+</Project>
