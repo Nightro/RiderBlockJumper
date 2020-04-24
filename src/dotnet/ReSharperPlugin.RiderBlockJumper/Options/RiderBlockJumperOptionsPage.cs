@@ -22,10 +22,10 @@ namespace ReSharperPlugin.RiderBlockJumper.Options
             : base(lifetime, optionsPageContext, optionsSettingsSmartContext)
         {
             _lifetime = lifetime;
-
+            
             AddHeader("General");
             AddBoolOption((RiderBlockJumperSettings x) => x.JumpOutsideEdge, "Jump Outside Edge", "If enabled, the cursor will jump outside of the block edge (blank line), otherwise it jumps inside the block edge (text line)");
-            AddBoolOption((RiderBlockJumperSettings x) => x.SkipClosestEdge, "Skip Closest Edge", "If enabled, the cursor will only jump to the far edge of a block, otherwise it visits every edge of a block");
+            AddBoolOption((RiderBlockJumperSettings x) => x.SkipClosestEdge, text: "Skip Closest Edge", toolTipText: "If enabled, the cursor will only jump to the far edge of a block, otherwise it visits every edge of a block");
         }
     }
 }
