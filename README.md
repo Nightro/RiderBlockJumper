@@ -33,6 +33,7 @@ Settings can be found under `File>Settings...>Editor>Block Jumper`
 # Credits and Thanks
 
 * [Casey Muratory](https://twitter.com/cmuratori) - I first saw this method for navigating code in his Handmade Hero video series
+* [Matthias Koch](https://twitter.com/matkoch87) - For helping me get started and putting me in the Jetbrains PluginWriters slack
 * [Space Block Jumper](https://marketplace.visualstudio.com/items?itemName=jmfirth.vsc-space-block-jumper) - I use this extension for the same purpose as RiderBlockJumper in VSCode
 * [Anthony Reddan](https://twitter.com/AnthonyReddan) - That's me!
 
