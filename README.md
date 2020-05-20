@@ -16,10 +16,10 @@ Due to existing keybindings within Rider, I was unable to provide my ideal defau
 
 | Command               | Description                                     | Keybinding (Default) | Keybinding (Ideal) |
 |:--------------------- |:----------------------------------------------- |:-------------------- |:------------------ |
-| `Edit.JumpUp`         | Jump to the closest block edge above the cursor | `Alt+Up`             | `Ctrl+Up`          |
-| `Edit.JumpDown`       | Jump to the closest block edge below the cursor | `Alt+Down`           | `Ctrl+Down`        |
-| `Edit.JumpSelectUp`   | Jump Up and add to the active selection         | `Alt+Shift+Up`       | `Ctrl+Shift+Up`    |
-| `Edit.JumpSelectDown` | Jump Down and add to the active selection       | `Alt+Shift+Down`     | `Ctrl+Shift+Down`  |
+| `Edit.JumpUp`         | Jump to the closest block edge above the cursor | `Alt+Page Up`        | `Ctrl+Up`          |
+| `Edit.JumpDown`       | Jump to the closest block edge below the cursor | `Alt+Page Down`      | `Ctrl+Down`        |
+| `Edit.JumpSelectUp`   | Jump Up and add to the active selection         | `Alt+Shift+Page Up`  | `Ctrl+Shift+Up`    |
+| `Edit.JumpSelectDown` | Jump Down and add to the active selection       | `Alt+Shift+Page Down`| `Ctrl+Shift+Down`  |
 
 ## Settings
 
