@@ -1,4 +1,5 @@
 import org.apache.tools.ant.taskdefs.condition.Os
+import org.markdownj.MarkdownProcessor
 
 buildscript {
     repositories {
@@ -8,6 +9,7 @@ buildscript {
 
     dependencies {
         classpath("com.jetbrains.rd:rd-gen:0.192.2")
+        classpath("org.markdownj:markdownj-core:0.4")
     }
 }
 
@@ -68,12 +70,6 @@ buildPlugin {
             into "${rootDir}/output"
         }
 
-        def changelogText = file("${rootDir}/CHANGELOG.md").text
-        def changelogMatches = changelogText =~ /(?s)(-.+?)(?=##|$)/
-        def changeNotes = changelogMatches.collect {
-            it[1].replaceAll(/(?s)- /, "\u2022 ").replaceAll(/`/, "").replaceAll(/,/, "%2C")
-        }.take(1).join("")
-
         exec {
             executable "dotnet"
             args "msbuild","/t:Pack","${DotnetSolution}","/p:Configuration=${BuildConfiguration}","/p:PackageOutputPath=${rootDir}/output","/p:PackageReleaseNotes=${changeNotes}","/p:PackageVersion=${version}"
@@ -119,12 +115,13 @@ rdgen {
 }
 
 patchPluginXml {
+    def mdProcessor = new MarkdownProcessor()
     def changelogText = file("${rootDir}/CHANGELOG.md").text
-    def changelogMatches = changelogText =~ /(?s)(-.+?)(?=##|$)/
+    def changelogMatches = changelogText =~ /(?s)(##.+?)(?=## \[|$)/
 
     changeNotes = changelogMatches.collect {
-        it[1].replaceAll(/(?s)\r?\n/, "<br />\n")
-    }.take(1).join('')
+        mdProcessor.markdown(it[1])
+    }.take(1).join('').concat('<p><a href="https://github.com/Nightro/RiderBlockJumper/blob/master/CHANGELOG.md">Full Changelog</a></p>')
 
     sinceBuild = "191"
     untilBuild = "201.*"

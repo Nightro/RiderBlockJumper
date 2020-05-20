@@ -3,14 +3,14 @@
     <SdkVersion>2019.3.0-*</SdkVersion>
     
     <Title>RiderBlockJumper</Title>
-    <Description>Description</Description>
+    <Description>RiderBlockJumper is a plugin that allows you to jump over blocks of code. Jumping takes you outside of the nearest block edge (i.e. the whitespace line adjacent to the block). If the cursor reaches BOF or EOF, it jumps there instead.</Description>
   
-    <Authors>Author</Authors>
-    <Copyright>Copyright $([System.DateTime]::Now.Year) Maintainers of RiderBlockJumper</Copyright>
+    <Authors>Anthony Reddan</Authors>
+    <Copyright>Copyright $([System.DateTime]::Now.Year) Anthony Reddan</Copyright>
     <PackageTags>resharper plugin</PackageTags>
   
-    <PackageProjectUrl></PackageProjectUrl>
-    <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageIconUrl></PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Nightro/RiderBlockJumper</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Nightro/RiderBlockJumper/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Nightro/RiderBlockJumper/master/media/RiderBlockJumperLogo.png</PackageIconUrl>
   </PropertyGroup>
 </Project>

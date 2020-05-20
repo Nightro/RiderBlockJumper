@@ -8,7 +8,23 @@
 
   <description>
 <![CDATA[
-<p>RiderBlockJumper is a plugin that allows you to jump over blocks of code. Jumping takes you outside of the nearest block edge (i.e. the whitespace line adjacent to the block). If the cursor reaches BOF or EOF, it jumps there instead.</p>
+<p>Allows you to jump over blocks of code. Jumping takes you outside of the nearest block edge 
+(i.e. the whitespace line adjacent to the block). If the cursor reaches BOF or EOF, it jumps 
+there instead. Source available on <a href="https://github.com/Nightro/RiderBlockJumper">GitHub</a>.</p>
+<h2>Actions</h2>
+<p><code>Ctrl+Shift+A</code></p>
+<ul>
+  <li><code>JumpUp</code> Jump to the closest block edge above the cursor (<code>Alt+PgUp</code>)</li>
+  <li><code>JumpDown</code> Jump to the closest block edge below the cursor (<code>Alt+PgDn</code>)</li>
+  <li><code>JumpSelectUp</code> Jump Up and add to the active selection (<code>Alt+Shift+PgUp</code>)</li>
+  <li><code>JumpSelectDown</code> Jump Down and add to the active selection (<code>Alt+Shift+PgDn</code>)</li>
+</ul>
+<h2>Settings</h2>
+<p><code>File>Settings...>Editor>Block Jumper</code></p>
+<ul>
+  <li><code>JumpOutsideEdge</code> If enabled, the cursor will jump outside of the block edge (blank line), otherwise it jumps inside the block edge (text line) (<code>default: true</code>)</li>
+  <li><code>SkipClosestEdge</code> If enabled, the cursor will only jump to the far edge of a block, otherwise it visits every edge of a block (<code>default: false</code>)</li>
+</ul>
 ]]>
   </description>
 
