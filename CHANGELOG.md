@@ -3,6 +3,7 @@
 ## [1.0.1]
 * Adjust heading size for plugin description 
 * Fix options page Id
+* Attempt to fix broken plugin when downloading from the official site
 
 ## [1.0.0]
 The very first release of RiderBlockJumper, a plugin for Rider 2019 which enables vertical navigation over blocks of code (⌐■_■)
