@@ -70,6 +70,13 @@ buildPlugin {
             into "${rootDir}/output"
         }
 
+        def changelogText = file("${rootDir}/CHANGELOG.md").text
+        def changelogMatches = changelogText =~ /(?s)(##.+?)(?=## \[|$)/
+
+        def changeNotes = changelogMatches.collect {
+            it[1].replaceAll(/(?s)\* /, "\u2022 ").replaceAll(/`/, "").replaceAll(/,/, "%2C").replaceAll(/#/, "")
+        }.take(1).join("")
+
         exec {
             executable "dotnet"
             args "msbuild","/t:Pack","${DotnetSolution}","/p:Configuration=${BuildConfiguration}","/p:PackageOutputPath=${rootDir}/output","/p:PackageReleaseNotes=${changeNotes}","/p:PackageVersion=${version}"

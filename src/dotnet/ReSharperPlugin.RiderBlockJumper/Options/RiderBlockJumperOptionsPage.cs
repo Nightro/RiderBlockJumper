@@ -10,7 +10,7 @@ namespace ReSharperPlugin.RiderBlockJumper.Options
     [OptionsPage(Id, PageTitle, typeof(OptionsThemedIcons.EnvironmentGeneral), ParentId = EnvironmentEditorPage.PID)]
     public class RiderBlockJumperOptionsPage : BeSimpleOptionsPage
     {
-        private const string Id = nameof(RiderBlockJumperOptionsPage);
+        private const string Id = "RiderBlockJumperOptionsPage";
         private const string PageTitle = "Block Jumper Options";
 
         private readonly Lifetime _lifetime;
